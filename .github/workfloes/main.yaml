@@ -37,7 +37,7 @@ jobs:
 
       - name: Build site
         env:
-          BASE_PATH: '/port'
+          BASE_PATH: '/desginPort'
         run: |
           npm run build
           touch build/.nojekyll

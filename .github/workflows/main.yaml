@@ -42,7 +42,7 @@ jobs:
 
       - name: Build site
         env:
-          BASE_PATH: '/desginPort'
+          BASE_PATH: '/designerPorfolio'
         run: |
           pnpm run build
           touch build/.nojekyll

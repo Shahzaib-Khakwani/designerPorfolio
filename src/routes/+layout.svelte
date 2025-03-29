@@ -1,5 +1,5 @@
 <script>
-    import { enhance } from '$app/forms';
+    import { base } from '$app/paths';
 	import '../app.css';
 	import { gsap } from "gsap";
 	import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -52,7 +52,7 @@
 			);
 			
 			const enhancedImg = document.createElement('img');
-			enhancedImg.src = image;
+			enhancedImg.src = `${base}/image`;
 			enhancedImg.classList.add(
 				'w-full', 
 				'h-full', 
@@ -121,39 +121,38 @@
 </script>
 
 
-<!-- {#if !isLoadingComplete}
+{#if !isLoadingComplete}
 	<div 
 		bind:this={loaderContainer}
 		class="fixed inset-0 bg-black z-50 flex items-center justify-center overflow-hidden"
 	>
 	</div>
-{/if} -->
-<!-- 
+{/if} 
+
 {#if isLoadingComplete}
-	{@render children()}
-{/if} -->
 
 
-<div class="min-h-screen w-full relative bg-[#F5EFE5]">
-	{@render children()}
-	<Nav />
+	<div class="min-h-screen w-full relative bg-[#F5EFE5]">
+		{@render children()}
+		<Nav />
 
-	<About/>
+		<About/>
 
-	<LilGallery />
+		<LilGallery />
 
-	<Info />
+		<Info />
 
-	<Services />
+		<Services />
 
-	<Gallery />
+		<Gallery />
 
-	<Footer />
-
-
-</div>
+		<Footer />
 
 
+	</div>
+
+
+{/if}
 
 
 

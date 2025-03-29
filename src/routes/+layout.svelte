@@ -52,7 +52,7 @@
 			);
 			
 			const enhancedImg = document.createElement('img');
-			enhancedImg.src = `${base}/image`;
+			enhancedImg.src = `${base}/${image}`;
 			enhancedImg.classList.add(
 				'w-full', 
 				'h-full', 

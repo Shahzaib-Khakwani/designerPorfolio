@@ -13,21 +13,21 @@
             <div class="imgComp overflow-hidden rounded-lg hover:scale-[1.02] transition-transform duration-300">
                 <img 
                     class="actImg w-full h-full object-cover object-center" 
-                    src="{base}/static/pic1.jpg" 
+                    src="{base}/pic1.jpg" 
                     alt="Gallery Image 1"
                 />
             </div>
             <div class="imgComp overflow-hidden rounded-lg hover:scale-[1.02] transition-transform duration-300">
                 <img 
                     class="actImg w-full h-full object-cover object-center" 
-                    src="{base}/static/pic2.jpg" 
+                    src="{base}/pic2.jpg" 
                     alt="Gallery Image 2"
                 />
             </div>
             <div class="imgComp overflow-hidden rounded-lg hover:scale-[1.02] transition-transform duration-300">
                 <img 
                     class="actImg w-full h-full object-cover object-center" 
-                    src="{base}/static/pic3.webp" 
+                    src="{base}/pic3.webp" 
                     alt="Gallery Image 3"
                 />
             </div>
@@ -36,21 +36,21 @@
             <div class="imgComp overflow-hidden rounded-lg hover:scale-[1.02] transition-transform duration-300">
                 <img 
                     class="actImg w-full h-full object-cover object-center" 
-                    src="{base}/static/pic4.webp" 
+                    src="{base}/pic4.webp" 
                     alt="Gallery Image 4"
                 />
             </div>
             <div class="imgComp overflow-hidden rounded-lg hover:scale-[1.02] transition-transform duration-300">
                 <img 
                     class="actImg w-full h-full object-cover object-center" 
-                    src="{base}/static/pic5.jpg" 
+                    src="{base}/pic5.jpg" 
                     alt="Gallery Image 5"
                 />
             </div>
             <div class="imgComp overflow-hidden rounded-lg hover:scale-[1.02] transition-transform duration-300">
                 <img 
                     class="actImg w-full h-full object-cover object-center" 
-                    src="{base}/static/pic6.jpg" 
+                    src="{base}/pic6.jpg" 
                     alt="Gallery Image 6"
                 />
             </div>

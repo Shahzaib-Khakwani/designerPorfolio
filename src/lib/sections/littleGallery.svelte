@@ -45,7 +45,7 @@
                 transition-transform 
                 duration-300 
                 hover:scale-110"
-            src="{base}/static/showPic1.webp" 
+            src="{base}/showPic1.webp" 
             alt="Gallery Image 1"
         />
     </div>
@@ -63,7 +63,7 @@
                 transition-transform 
                 duration-300 
                 hover:scale-110"
-            src='{base}/static/showPic2.webp' 
+            src='{base}/showPic2.webp' 
             alt="Gallery Image 2"
         />
     </div>

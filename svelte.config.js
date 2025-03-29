@@ -5,7 +5,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/desginPort' : ''
+			base: process.env.NODE_ENV === 'production' ? '/designerPorfolio' : ''
 		},
 		prerender: {
 			entries: ['/'] 

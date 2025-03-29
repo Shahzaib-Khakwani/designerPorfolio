@@ -5,12 +5,12 @@
 	import { ScrollTrigger } from "gsap/ScrollTrigger";
 	import { onMount } from "svelte";
 	import Nav from "$lib/components/navbar.svelte"
-    import LilGallery from "./sections/littleGallery.svelte";
-    import About from "./sections/about.svelte";
-    import Info from "./sections/info.svelte";
-    import Services from "./sections/services.svelte";
-    import Gallery from "./sections/gallery.svelte";
-    import Footer from "./sections/footer.svelte";
+    import LilGallery from "$lib/sections/littleGallery.svelte";
+    import About from "$lib/sections/about.svelte";
+    import Info from "$lib/sections/info.svelte";
+    import Services from "$lib/sections/services.svelte";
+    import Gallery from "$lib/sections/gallery.svelte";
+    import Footer from "$lib/sections/footer.svelte";
 
 	gsap.registerPlugin(ScrollTrigger);
 

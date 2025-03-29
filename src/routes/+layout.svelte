@@ -1,5 +1,7 @@
 <script>
     import { base } from '$app/paths';
+	import { fade } from "svelte/transition";
+	import { quintOut } from "svelte/easing";
 	import '../app.css';
 	import { gsap } from "gsap";
 	import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -108,14 +110,17 @@
 			}
 			
 			if (index === images.length - 1) {
+				const isMobile = window.innerWidth < 768; 
+    
 				tl.to(enhancedImgWrapper, {
-					scale: 7,
+					scale: isMobile ? 3 : 7,
 					opacity: 1,
 					duration: 0.8,
-					delay:0.6,
+					delay: 0.6,
 					ease: 'power2.inOut',
 				});
 			}
+			
 		});
 	});
 </script>
@@ -125,14 +130,19 @@
 	<div 
 		bind:this={loaderContainer}
 		class="fixed inset-0 bg-black z-50 flex items-center justify-center overflow-hidden"
-	>
+		out:fade={{ duration: 800, easing: quintOut }}
+
+		>
 	</div>
 {/if} 
 
 {#if isLoadingComplete}
 
 
-	<div class="min-h-screen w-full relative bg-[#F5EFE5]">
+	<div 
+	class="min-h-screen w-full relative bg-[#F5EFE5]"
+	transition:fade={{ duration: 800, easing: quintOut }}
+	>
 		{@render children()}
 		<Nav />
 

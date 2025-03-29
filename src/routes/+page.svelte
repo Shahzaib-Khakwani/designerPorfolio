@@ -19,10 +19,12 @@
                 pin:"#hero",
                 markers:false,
                 onUpdate: (self) => {
-                    if (self.progress > 0.8) {
-                        document.getElementById("NavBar").classList.add("bg-slate-900");
+                    if (self.progress > 0.9) {
+                        document.getElementById("NavBar").classList.remove('bg-transparent');
+                        document.getElementById("NavBar").classList.add('bg-[#F5EFE5]');
                     } else {
-                        document.getElementById("NavBar").classList.remove("bg-slate-900");
+                        document.getElementById("NavBar").classList.remove('bg-[#F5EFE5]');
+                        document.getElementById("NavBar").classList.add('bg-transparent');
                     }
                 }
             }

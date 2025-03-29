@@ -59,19 +59,16 @@
             class="font-stardom font-medium text-white 
                 text-3xl sm:text-5xl md:text-6xl lg:text-8xl 
                 leading-tight
-                bg-[url('{base}sky.jpeg')] 
-                bg-clip-text text-transparent 
-                bg-cover bg-center"
+                "
         >Astrid GerWeg</h1>
         
         <h2 
             id="heroTitleHeading"
             class="font-stardom 
+                text-white
                 text-2xl sm:text-4xl md:text-5xl lg:text-8xl 
                 tracking-tighter
-                bg-[url('{base}/sky.jpeg')] 
-                bg-clip-text text-transparent 
-                bg-cover bg-center"
+                "
         >Photography</h2>
     </div>
     

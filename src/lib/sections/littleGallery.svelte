@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
     import { gsap } from 'gsap';
     import { onMount } from "svelte";
 	import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -44,7 +45,7 @@
                 transition-transform 
                 duration-300 
                 hover:scale-110"
-            src="/static/showPic1.webp" 
+            src="{base}/static/showPic1.webp" 
             alt="Gallery Image 1"
         />
     </div>
@@ -62,7 +63,7 @@
                 transition-transform 
                 duration-300 
                 hover:scale-110"
-            src='/static/showPic2.webp' 
+            src='{base}/static/showPic2.webp' 
             alt="Gallery Image 2"
         />
     </div>

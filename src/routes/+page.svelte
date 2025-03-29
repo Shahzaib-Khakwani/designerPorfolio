@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
     import { gsap } from 'gsap';
     import { onMount } from "svelte";
 	import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -48,7 +49,7 @@
     <img  
         id="heroImage"
         class="z-20 absolute inset-0 w-full h-full lg:relative lg:h-auto object-cover object-center lg:aspect-square"
-        src="/mainPic.jpg"
+        src="{base}/mainPic.jpg"
         alt="mainHero"
     />
 

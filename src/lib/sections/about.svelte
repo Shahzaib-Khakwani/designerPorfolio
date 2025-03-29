@@ -1,7 +1,7 @@
 <script>
     
 </script>
-<div class='relative w-full h-[60vh] px-6 sm:px-10 md:px-16 flex flex-col lg:flex-row justify-center gap-y-6 lg:gap-y-0 lg:justify-between items-center text-center lg:text-start'>
+<div id="about" class='relative w-full h-[60vh] px-6 sm:px-10 md:px-16 flex flex-col lg:flex-row justify-center gap-y-6 lg:gap-y-0 lg:justify-between items-center text-center lg:text-start'>
 	<div class="lg:w-auto">
 		<p class="text-2xl sm:text-3xl md:text-4xl font-light leading-snug sm:leading-loose">
 			Hi, My name is 

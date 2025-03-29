@@ -2,31 +2,58 @@
     import { fly } from "svelte/transition";
     import { quintInOut } from "svelte/easing";
     import { onMount } from "svelte";
+    import { gsap } from 'gsap';
+	import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+	gsap.registerPlugin(ScrollToPlugin);
+
+
 
     let isToggled = $state(false);
 
-    function handleToggle() {
-        console.log(isToggled);
-        isToggled = !isToggled;
-        console.log(isToggled);
+    onMount(() => {
+    const menuItems = document.querySelectorAll('.menuItem');
+    
+    menuItems.forEach((menuItem) => {
+        menuItem.addEventListener('click', (e) => {
+            e.preventDefault(); 
+            console.log(menuItem.dataset.scrollTo);
+            gsap.to(window, {
+                duration: 1,
+                scrollTo: `#${menuItem.dataset.scrollTo}`
+            });
+        });
+    });
+});
 
+    function handleMenuItemClick(target) {
+    console.log(target);
+    gsap.to(window, {
+        duration: 1,
+        scrollTo: `#${target}`
+    });
+    
+    // Close the mobile menu if it's open
+    if (isToggled) {
+        isToggled = false;
     }
+}
 
     
 
 </script>
 
-<nav id="NavBar" class=" py-4 px-16 transition-colors duration-500  bg-transparent w-full h-20  fixed top-0 left-0 flex flex-row justify-between ">
+<nav id="NavBar" class="z-50 py-4 px-16 transition-colors duration-500  bg-transparent w-full h-20  fixed top-0 left-0 flex flex-row justify-between ">
     <p class="font-stardom text-3xl ">Astrid</p>
     <ul class="hidden lg:flex flex-row justify-center items-center gap-x-12 ">
         <li>
-            <a class=" text-gray-600" href="#">About</a>
+            <a class="menuItem text-gray-600" href="#" data-scroll-to="about">About</a>
         </li>
         <li>
-            <a class=" text-gray-600" href="#">Services</a>
+            <a class="menuItem text-gray-600" href="#" data-scroll-to="services">Services</a>
         </li>
         <li>
-            <a class=" text-gray-600" href="#">Contact</a>
+            <a class="menuItem text-gray-600" href="#" data-scroll-to="contact">Contact</a>
         </li>
     </ul>
 
@@ -50,17 +77,17 @@
 
             <a  
             class="text-2xl text-gray-800 hover:text-gray-600 transition-colors"
-            onclick={handleToggle}
+            onclick={()=>handleMenuItemClick('about')}
             href="#">About</a>
 
             <a  
             class="text-2xl text-gray-800 hover:text-gray-600 transition-colors"
-            onclick={handleToggle}
+            onclick={()=>handleMenuItemClick('contact')}
             href="#">Contact</a>
 
             <a  
             class="text-2xl text-gray-800 hover:text-gray-600 transition-colors"
-            onclick={handleToggle}
+            onclick={()=>handleMenuItemClick('services')}
             href="#">Services</a>
 
          </div>

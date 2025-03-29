@@ -1,4 +1,4 @@
-<div class="relative w-full min-h-[80vh] px-4 md:px-16 flex flex-col items-center justify-center gap-8">
+<div id="contact" class="relative w-full min-h-[80vh] px-4 md:px-16 flex flex-col items-center justify-center gap-8">
     <h1 class="font-stardom text-4xl md:text-6xl lg:text-9xl text-center">
         Astrid Gerweg
     </h1>

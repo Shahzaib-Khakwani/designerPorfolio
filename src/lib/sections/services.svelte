@@ -1,4 +1,4 @@
-<div class="relative min-h-screen px-4 lg:px-16 w-full flex flex-col justify-center space-y-12">
+<div id="services" class="relative min-h-screen px-4 lg:px-16 w-full flex flex-col justify-center space-y-12">
     <div>
         <h1 class="font-cabinet font-light text-3xl lg:text-5xl text-start">
             My Services

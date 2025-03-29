@@ -37,7 +37,7 @@
         overflow-hidden 
         rounded-lg 
         shadow-lg">
-        <enhanced:img 
+        <img 
             class="actImg 
                 w-full 
                 h-full 
@@ -55,7 +55,7 @@
         overflow-hidden 
         rounded-lg 
         shadow-lg">
-        <enhanced:img 
+        <img 
             class="actImg 
                 w-full 
                 h-full 

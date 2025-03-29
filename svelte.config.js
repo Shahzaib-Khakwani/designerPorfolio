@@ -8,7 +8,7 @@ const config = {
 			base: process.env.NODE_ENV === 'production' ? '/desginPort' : ''
 		},
 		prerender: {
-			default: true
+			entries: ['/'] 
 		}
 	}
 };
